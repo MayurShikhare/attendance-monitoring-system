@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500&family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* font-family: 'Crimson Pro', serif;
+font-family: 'Inter', sans-serif; */
+.container{
+  margin: 1rem  4rem;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+.btn,
+li{
+  font-family: 'Inter', sans-serif;
+  
+}
+
+.students-grid{
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 2rem 0;
+
+}
+
+.student{
+padding: 2rem 1rem;
+text-align: center;
+border: 1px solid rgb(88, 88, 88);
+margin: 1rem;
+cursor: pointer;
+transition: all .1s ease-in-out;
+/* box-shadow: 4px 4px 0px 0px rgb(235, 235, 235); */
+
+}
+.student:hover{
+  box-shadow: 0px 0px 1px 5px rgb(244, 244, 244);
+
+
+}
+.active{
+  background-color: rgb(145, 255, 118);  
+  margin: .5rem;
+  cursor: pointer;
+  transition: all 2s ease-in-out;
+}
+.default{
+  cursor: pointer;
+  /* background-color: rgb(60, 60, 60); */
+  border: 1px solid red;
+  margin: .5rem;
+  /* color: white; */
+}
+
+.btn{
+  padding: 1em 2.5em;
+  background-color: rgb(72, 63, 255);
+  color: white;
+  border: none;
+  font-size: clamp(14px, 4vw + 10%, 18px);
+  transition: all .25s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+/* .btn:hover{
+  background-color: rgb(37, 26, 255);
+  letter-spacing: 2px;
+
+} */
